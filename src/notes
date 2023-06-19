@@ -1,0 +1,6 @@
+  className="Resume-container"
+      key={"animatekey"}
+      initial={{ opacity: 0.45 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      style={{ position: "absolute", width: "99.5%" }}

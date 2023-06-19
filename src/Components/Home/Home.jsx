@@ -1,0 +1,79 @@
+import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import HomeSideLines from "./HomeSideLines";
+import HomeNameSvg from "./HomeNameSvg";
+import "../../Styles/gradient.css";
+import HomeLinesGrad from "./HomeLinesGrad";
+import HomeLogo from "./HomeLogo";
+import GradientColors from "../GradiantColors";
+
+const Home = () => {
+  const colors = GradientColors;
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === colors.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const currentColor = colors[currentIndex];
+
+  const containerStyle = {
+    background: `linear-gradient(180deg, ${currentColor.grad2} 0%, ${currentColor.grad1} 100%)`,
+  };
+
+  const lineStyle = {
+    background: `linear-gradient(90deg, ${currentColor.grad2} 0%, ${currentColor.grad1} 100%)`,
+  };
+
+  return (
+    <motion.main
+      className="Home-container"
+      initial={{ opacity: 0 }}
+      key={"animatekey"}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5, ease: "easeInOut", delay: 0.3 }}
+      style={{ position: "absolute", width: "99.23%" }}
+    >
+      <section className="home">
+        <HomeSideLines currentColor={currentColor} />
+        <section className="inner-container">
+          <div className="inner-container-text">
+            <HomeNameSvg />
+            <div className="inner-container-pgraph">
+              <div className="test2">
+                <HomeLinesGrad containerStyle={containerStyle} />
+                <div className="display-text">
+                  <span className="inner-text text-width">
+                    An aspiring front-end developer who is passionate about
+                    creating beautiful web interfaces, web applications, and
+                    intuitively implemented UX.
+                  </span>
+                  <span className="inner-text-2 text-width">
+                    You can also see my work on the following pages:
+                    <button className="bn5">Projects</button>
+                    <button className="bn5">About</button>
+                    <button className="bn5">Resume</button>
+                    <button className="bn5">Contact me</button>, or send me an
+                    email or message to
+                    <button className="bn5">Jmlsoteyza.dev@gmail.com</button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <HomeLogo lineStyle={lineStyle} />
+          <p className="credit-portfolio-link">©jmlsoteyza.vercel.app</p>
+        </section>
+      </section>
+    </motion.main>
+  );
+};
+export default Home;

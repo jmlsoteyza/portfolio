@@ -1,0 +1,161 @@
+:root {
+    --grad-1: rgb(165, 35, 35);
+    --grad-2: rgba(39, 60, 128, 0.507);
+}
+
+.line1 {
+    width: 0.25rem;
+    height: 7.5rem;
+    background: linear-gradient(0deg, var(--grad-2) 0%, var(--grad-1) 100%);
+    margin-left: -1.8rem;
+}
+
+.aboutme-line {
+    width: 13rem;
+    background: linear-gradient(90deg, var(--grad-2) 0%, var(--grad-1) 100%);
+    height: 1px;
+}
+
+.test2 {
+    display: flex;
+    position: relative;
+    gap: 1.8rem;
+}
+
+.display-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.line-icons {
+    display: block;
+    width: 4.7rem;
+    height: 0.125rem;
+    background: linear-gradient(90deg, var(--grad-2) 0%, var(--grad-1) 100%);
+}
+
+.linkedin-logo {
+    position: relative;
+}
+
+.linkedin-logo::before {
+    content: '';
+    left: 0.2rem;
+    right: 0;
+    top: 0.2rem;
+    bottom: 0;
+    width: 0.938rem;
+    height: 0.938rem;
+    position: absolute;
+}
+
+.linkedin-logo a:hover svg path {
+    fill: #0077b5;
+    background-color: #fff;
+    transition: all .25s ease-in-out;
+}
+
+.mail-logo {
+    position: relative;
+}
+
+.mail-logo::before {
+    content: '';
+    position: absolute;
+    width: 1.125rem;
+    height: 1.175rem;
+    left: 0.175rem;
+    right: 0;
+    top: 0.1rem;
+}
+
+.mail-logo:hover svg path {
+    fill: #ea4335;
+    transition: all .25s ease-in-out;
+}
+
+.github-logo {
+    position: relative;
+}
+
+.github-logo::before {
+    content: '';
+    position: absolute;
+    width: 1.563rem;
+    height: 1.438rem;
+    left: -0.127rem;
+    top: -0.1rem;
+}
+
+.github-logo:hover::before,
+.mail-logo:hover::before,
+.linkedin-logo:hover::before {
+    background-color: #fff;
+    transition: all .25s ease-in-out;
+    z-index: -1;
+}
+
+.github-logo:hover svg path {
+    fill: #111;
+}
+
+.github-logo,
+.mail-logo,
+.linkedin-logo {
+    margin-top: 0.257rem;
+}
+
+/* left info logo */
+
+.info-logo_left {
+    width: 40px;
+    position: fixed;
+    left: 40px;
+    bottom: 0;
+    right: auto;
+    color: #e1e1e1;
+}
+
+.info-logo_right {
+    position: fixed;
+    right: 60px;
+    left: auto;
+    bottom: 0;
+    color: #e1e1e1;
+}
+
+.info-logo_left ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info-logo_left ul li {
+    margin-top: 1.875rem;
+}
+
+.info-line {
+    display: block;
+    width: 1px;
+    height: 90px !important;
+    background: linear-gradient(0deg, var(--grad-2) 0%, var(--grad-1) 100%);
+    margin: 0 auto;
+    margin-top: 34px;
+}
+
+.info-logo_right_flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-logo_right_flex p {
+    writing-mode: vertical-rl;
+    font-size: 11.2px;
+    font-family: 'Fira Mono', monospace;
+    letter-spacing: 0.125rem;
+    line-height: 18px;
+    font-weight: normal;
+    color: #e1e1e1;
+}
