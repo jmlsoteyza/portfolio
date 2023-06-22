@@ -1,0 +1,67 @@
+.Projects-inner_container {
+  max-width: 70rem;
+  width: 100%;
+  margin: 0 auto;
+
+  .Projects_header {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+
+    h1 {
+      font-size: 3.65rem;
+      font-family: "Gotham-Book";
+      font-weight: 600;
+      color: #e1e1e1;
+    }
+  }
+}
+
+.Projects-tabs_container {
+  margin-top: 3.6rem;
+  width: 100%;
+
+  .tabs_btn {
+    display: flex;
+    gap: 1rem;
+
+    .btn {
+      outline: none;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      padding-inline: 1.257rem;
+      padding-block: 0.6rem;
+      border: 1px solid #c2c1c163;
+      background-color: transparent;
+      font-family: "Arimo";
+      font-weight: normal;
+      border-radius: 3px;
+    }
+    .btn:hover {
+      cursor: pointer;
+      transition: all 0.125s ease-in;
+      border: 1px solid #c2c1c1;
+    }
+
+    .btn.active {
+      color: black;
+      transition: all 0.125s ease-in;
+      background-color: #f5f5f5ee;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      //   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    }
+  }
+}
+
+.tabs-transition {
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.tab.active {
+  opacity: 1;
+}
