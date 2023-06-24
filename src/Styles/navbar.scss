@@ -20,8 +20,9 @@ ul {
   display: flex;
   flex-direction: row;
   list-style: none;
-  column-gap: 1.137rem;
+  column-gap: 0.437rem;
   position: relative;
+  align-items: center;
 }
 ul li {
   font-size: 0.875rem;
@@ -34,6 +35,8 @@ ul li {
   text-decoration: none;
   display: block;
   opacity: 1;
+  padding-inline: 0.75rem;
+  padding-block: 0.75rem;
 }
 .Link-color::after {
   content: "";
@@ -42,7 +45,7 @@ ul li {
   height: 0.5px;
   width: 100%;
   left: 0;
-  bottom: -7px;
+  bottom: 3px;
   transition: transform 0.25s ease-out;
   transform: scaleX(0);
   transform-origin: center;
@@ -52,7 +55,7 @@ ul li {
   transform: scaleX(1);
   transform-origin: center;
   color: #ffff;
-  transition: transform 0.2s ease-in;
+  transition: transform 0.25s ease-in;
 }
 .Link-color:hover {
   color: #ffff;
@@ -60,7 +63,18 @@ ul li {
 .Link-color.active {
   display: none;
 
- ul li {
+  ul li {
     display: none;
+  }
+}
+
+.toggle-mode {
+  margin-left: 0.57rem;
+  cursor: pointer;
+  padding: 0.6rem;
+
+  img {
+    width: 25px;
+    height: 25px;
   }
 }

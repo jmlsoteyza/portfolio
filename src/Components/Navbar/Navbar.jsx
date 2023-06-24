@@ -1,8 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../../assets/images/jom-logo.svg";
+import light from "../../assets/images/light.svg";
+import dark from "../../assets/images/dark.svg";
+import { ThemeFunction } from "../../App";
 
 const Navbar = () => {
+  const { theme, toggleTheme } = useContext(ThemeFunction);
   return (
     <nav>
       <Link to="/">
@@ -34,14 +38,13 @@ const Navbar = () => {
         >
           <li className="line line-color">Contacts</li>
         </NavLink>
-        <NavLink
-          className={({ isActive }) =>
-            isActive ? "Link-color active" : "Link-color"
-          }
-          to="Resume"
-        >
-          <li className="line line-color">Resume</li>
-        </NavLink>
+        <div className="toggle-mode">
+          {theme === "dark" ? (
+            <img src={light} alt="moon" onClick={toggleTheme} />
+          ) : (
+            <img src={dark} alt="sun" onClick={toggleTheme} />
+          )}
+        </div>
       </ul>
     </nav>
   );
