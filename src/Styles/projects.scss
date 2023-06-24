@@ -21,16 +21,17 @@
 .Projects-tabs_container {
   margin-top: 3.6rem;
   width: 100%;
-
   .tabs_btn {
     display: flex;
     gap: 1rem;
+    justify-content: center;
+    align-items: center;
 
     .btn {
       outline: none;
       border: none;
       color: #fff;
-      font-size: 16px;
+      font-size: 1rem;
       padding-inline: 1.257rem;
       padding-block: 0.6rem;
       border: 1px solid #c2c1c163;
@@ -64,4 +65,202 @@
 
 .tab.active {
   opacity: 1;
+}
+
+// projects container
+
+// hover
+.tabs-container_flex_reverse:hover,
+.tabs-container_flex:hover {
+  background-color: #e7e7e709;
+  transition: all 0.3s ease;
+}
+.tabs-container_flex_reverse {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+  border-radius: 0.625rem;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  color: #e1e1e1;
+  padding: 1.8rem 1.5rem;
+  margin-bottom: 8rem;
+  backdrop-filter: blur(2rem);
+  background: linear-gradient(
+    180deg,
+    rgba(60, 63, 80, 0.5),
+    rgba(15, 15, 24, 0.5)
+  );
+  -webkit-backdrop-filter: blur(54px);
+  backdrop-filter: blur(54px);
+
+  .projects-info_container {
+    .projects_desc {
+      text-align: right;
+    }
+
+    .projects_languages {
+      float: right;
+    }
+
+    .projects-title_header {
+      margin-bottom: 2.5rem;
+      text-align: right;
+
+      .projects-title_lineHeader {
+        width: 100%;
+        max-width: 6.7rem;
+        float: right;
+      }
+
+      h1 {
+        font-size: 1.625rem;
+        font-family: "Arimo";
+        margin-top: 1.7rem;
+        margin-bottom: 0.357rem;
+      }
+    }
+  }
+  .projects_live-site {
+    right: 0;
+  }
+  .projects_desc {
+    padding-left: 3rem;
+  }
+  .github_container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 0.42rem;
+    margin-left: 3rem;
+  }
+  .github {
+    width: 22px;
+    height: 22px;
+    fill: transparent;
+  }
+}
+
+.tabs-container_flex {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+  border-radius: 6px;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  color: #e1e1e1;
+  padding: 1.8rem 1.5rem;
+  margin-bottom: 8rem;
+  backdrop-filter: 1rem;
+  flex-direction: row-reverse;
+  background: linear-gradient(
+    180deg,
+    rgba(60, 63, 80, 0.5),
+    rgba(15, 15, 24, 0.5)
+  );
+  -webkit-backdrop-filter: blur(3.375rem);
+  backdrop-filter: blur(3.375rem);
+  position: relative;
+
+  .projects-title_header {
+    margin-bottom: 2.5rem;
+    display: inline-block;
+
+    h1 {
+      font-size: 1.625rem;
+      font-family: "Arimo";
+      margin-top: 1.7rem;
+      margin-bottom: 0.357rem;
+    }
+  }
+
+  .projects_live-site {
+    left: 0;
+  }
+
+  .projects_desc {
+    padding-right: 3rem;
+  }
+  .github_container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 0.42rem;
+    margin-right: 3rem;
+
+    .github {
+      width: 22px;
+      height: 22px;
+      fill: transparent;
+      transition: transform 0.3s ease-in-out;
+    }
+  }
+}
+.project-info_img {
+  width: 100%;
+  height: auto;
+  max-width: 34.375rem;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 23.75rem;
+    object-fit: cover;
+    border-radius: 0.75rem;
+  }
+}
+.projects_languages {
+  color: #ffffff;
+  display: flex;
+  gap: 0.485rem;
+  margin-top: 1.257rem;
+  align-items: center;
+
+  span {
+    color: #fff;
+    background-color: #08080877;
+    border-radius: 12px;
+    padding: 0.3rem 0.75rem;
+  }
+}
+
+.projects-info_container {
+  max-width: 30rem;
+  width: 100%;
+  font-size: 14.5px;
+  position: relative;
+}
+
+.projects_desc {
+  line-height: 1.8;
+}
+// text
+.projects_live-site {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0.8rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  h2 {
+    color: #fff;
+  }
+}
+.projects_live-site:hover {
+  .projects_line {
+    width: 100%;
+  }
+}
+
+.github_container {
+  transition: transform 0.3s ease-in-out;
+  padding: 0.8rem 0.5rem;
+}
+
+.github_container:hover {
+  stroke: #fff;
+  transform: translateY(-7.58px); /* Adjust the value as needed */
+  .github path {
+    stroke: #fff;
+  }
 }

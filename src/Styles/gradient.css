@@ -16,6 +16,23 @@
     height: 1px;
 }
 
+.projects_line {
+    background: linear-gradient(90deg, var(--grad-2) 0%, var(--grad-1) 100%);
+    width: 4.55rem;
+    height: 1px;
+    display: block;
+    margin-top: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.projects-title_lineHeader {
+    display: block;
+    background: linear-gradient(90deg, var(--grad-2) 0%, var(--grad-1) 100%);
+    width: 100%;
+    height: 1px;
+
+}
+
 .test2 {
     display: flex;
     position: relative;
@@ -130,6 +147,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .info-logo_left ul li {
     margin-top: 1.875rem;
 }

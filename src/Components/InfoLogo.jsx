@@ -7,7 +7,6 @@ const InfoLogo = () => {
   const colors = GradientColors;
   const iconImg = InfologoLinks;
 
-
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -30,12 +29,16 @@ const InfoLogo = () => {
     <>
       <div className="info-logo_left">
         <ul>
-          {iconImg.map((icons) => (
-              <a href={icons.link}>
-                <li>
-                  <img className="info-logo_icons" src={icons.img} alt={icons.img} />
-                </li>
-              </a>
+          {iconImg.map((icons, key) => (
+            <a href={icons.link} key={key}>
+              <li key={key}>
+                <img
+                  className="info-logo_icons"
+                  src={icons.img}
+                  alt={icons.img}
+                />
+              </li>
+            </a>
           ))}
           <span
             className="info-line_left info-line"

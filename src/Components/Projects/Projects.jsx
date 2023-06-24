@@ -1,12 +1,33 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import ProjectsTab1 from "./ProjectsTab1";
 import ProjectsTab2 from "./ProjectsTab2";
 import AboutLinesGradient from "../About/AboutLinesGradient";
 import "../../Styles/gradient.css";
 import InfoLogo from "../InfoLogo";
+import GradientColors from "../GradiantColors";
 
 const Projects = () => {
+  const colors = GradientColors;
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === colors.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const currentColor = colors[currentIndex];
+
+  const lineStyle = {
+    background: `linear-gradient(90deg, ${currentColor.grad2} 0%, ${currentColor.grad1} 100%)`,
+  };
+
   const [tabsValue, setTabsValue] = useState(0);
 
   const handleTabsIndex = (index) => {
@@ -44,8 +65,8 @@ const Projects = () => {
             </button>
           </div>
           <div className="Projects-tabs">
-            <ProjectsTab1 tabsValue={tabsValue} />
-            <ProjectsTab2 tabsValue={tabsValue} />
+            <ProjectsTab1 tabsValue={tabsValue} lineStyle={lineStyle} />
+            <ProjectsTab2 tabsValue={tabsValue} lineStyle={lineStyle} />
           </div>
         </div>
       </section>
