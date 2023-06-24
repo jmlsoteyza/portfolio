@@ -26,11 +26,14 @@ ul {
 ul li {
   font-size: 0.875rem;
   font-weight: 500;
+  display: block;
 }
 .Link-color {
   color: #e1e1e1;
   position: relative;
   text-decoration: none;
+  display: block;
+  opacity: 1;
 }
 .Link-color::after {
   content: "";
@@ -39,19 +42,25 @@ ul li {
   height: 0.5px;
   width: 100%;
   left: 0;
-  bottom: -12px;
+  bottom: -7px;
   transition: transform 0.25s ease-out;
   transform: scaleX(0);
-  transform-origin: bottom right;
+  transform-origin: center;
 }
-
 .Link-color:hover:after {
   width: 100%;
   transform: scaleX(1);
-  transform-origin: bottom left;
-}
-.Link-color:hover,
-.Link-color:active {
+  transform-origin: center;
   color: #ffff;
-  transition: all 0.25s;
+  transition: transform 0.2s ease-in;
+}
+.Link-color:hover {
+  color: #ffff;
+}
+.Link-color.active {
+  display: none;
+
+ ul li {
+    display: none;
+  }
 }

@@ -1,6 +1,9 @@
 import kicksae from "../../assets/images/kicksae3.png";
 import coinsae from "../../assets/images/coinsae3.png";
 import lofi from "../../assets/images/lofi3.png";
+import pae from "../../assets/images/PAE.png";
+import wallclock from "../../assets/images/wallclock.png";
+import Fe from "../../assets/images/FE1.png";
 export const TabsData1 = [
   {
     id: 1,
@@ -38,9 +41,12 @@ export const TabsData2 = [
   {
     id: 1,
     title: "Pixel-Art-Editor",
-    desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+    desc: "I have created a website that features a pixel-art editor that I learned the methods from Eloquent Javascript book. This online tool allows users to create pixel art, a graphic aesthetic that originated from 8- and 16-bit computers.",
     languages: ["HTML", "CSS", "Javascript"],
     class: "tabs-container_flex",
+    link: "https://jmlsoteyza.github.io/Pixel-Art-Editor/",
+    img: pae,
+    githubLink: "https://github.com/Jmlsoteyza/Pixel-Art-Editor",
   },
   {
     id: 2,
@@ -48,12 +54,18 @@ export const TabsData2 = [
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
     languages: ["HTML", "CSS", "Javascript"],
     class: "tabs-container_flex_reverse",
+    link: "https://jmlsoteyza-clock-time.netlify.app/",
+    githubLink: "https://github.com/Jmlsoteyza/Wall-Clock",
+    img: wallclock,
   },
   {
     id: 3,
-    title: "Front-End-Mentor Project",
+    title: "FE-Mentor Landing Page",
     desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
     languages: ["HTML", "CSS", "Javascript"],
     class: "tabs-container_flex",
+    img: Fe,
+    link: "https://warm-granita-362b51.netlify.app/",
+    githubLink: "",
   },
 ];
