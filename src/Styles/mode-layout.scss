@@ -1,0 +1,52 @@
+.main-component {
+  height: 100vh;
+}
+#dark {
+  transition: all 0.5s ease;
+}
+#light {
+  background-color: #e1e1e1;
+  transition: all 0.5s ease;
+  // navbar
+  .Link-color,
+  .inner-container-text {
+    color: #0b1728;
+  }
+  .inner-container-text {
+    font-weight: 500;
+    transition: 0.25 ease;
+  }
+  .Link-color:hover,
+  .Link-color:hover:after {
+    color: #000;
+  }
+  .Link-color::after {
+    background-color: #000;
+  }
+
+  .svg_name path {
+    fill: #0b1728 !important;
+  }
+  .icon-logo path {
+    fill: #000;
+  }
+  .mail-logo:hover svg path {
+    fill: #ea4335;
+    transition: all 0.25s ease-in-out;
+  }
+  .linkedin-logo a:hover svg path {
+    fill: #0077b5;
+    background-color: #fff;
+    transition: all 0.25s ease-in-out;
+  }
+
+  h1 {
+    color: #000;
+  }
+  .about-text_container {
+    p {
+      color: #0b1728;
+      font-weight: 500;
+    }
+  }
+}

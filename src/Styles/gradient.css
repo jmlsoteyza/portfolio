@@ -2,7 +2,9 @@
     --grad-1: rgb(165, 35, 35);
     --grad-2: rgba(39, 60, 128, 0.507);
 }
-
+#light :root {
+    --grad-1: blue;
+}
 .line1 {
     width: 0.25rem;
     height: 7.5rem;

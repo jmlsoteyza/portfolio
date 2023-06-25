@@ -13,11 +13,13 @@ function App() {
   };
 
   return (
-    <ThemeFunction.Provider value={{ theme, toggleTheme }}>
-        <Router id={theme}>
+    <ThemeFunction.Provider value={{ toggleTheme, theme }}>
+      <div className="main-component" id={theme}>
+        <Router>
           <Navbar />
           <FadeRoutes />
         </Router>
+      </div>
     </ThemeFunction.Provider>
   );
 }

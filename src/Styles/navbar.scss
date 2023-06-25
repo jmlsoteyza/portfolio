@@ -69,12 +69,17 @@ ul li {
 }
 
 .toggle-mode {
-  margin-left: 0.57rem;
+  margin-left: 0.12rem;
   cursor: pointer;
   padding: 0.6rem;
 
   img {
     width: 25px;
     height: 25px;
+
+    &.second-img {
+      padding: 2.5px;
+    }
   }
 }
+

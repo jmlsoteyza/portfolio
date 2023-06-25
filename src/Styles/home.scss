@@ -1,18 +1,21 @@
 @use "variables" as *;
-main {
+.Home-container {
   padding: 0;
   margin: 0;
-  height: 37rem;
   border-radius: 0.3rem;
   display: block;
   color: #e1e1e1;
+  height: calc(100vh - 16rem);
+}
+.test456 {
+  position: relative;
 }
 .home {
   width: 100%;
   max-width: 70rem;
   margin: 4.2rem auto;
   position: relative;
-  max-height: 57rem;
+  max-height: 37rem;
   height: 100%;
 }
 .inner-container {
@@ -31,6 +34,10 @@ main {
 .inner-text-2 {
   margin-top: 1.2rem;
   padding-right: 1rem;
+
+  button {
+    margin-left: 0.25rem;
+  }
 }
 .inner-container-pgraph {
   display: flex;

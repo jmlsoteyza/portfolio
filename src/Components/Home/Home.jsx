@@ -6,6 +6,7 @@ import "../../Styles/gradient.css";
 import HomeLinesGrad from "./HomeLinesGrad";
 import HomeLogo from "./HomeLogo";
 import GradientColors from "../GradiantColors";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
   const colors = GradientColors;
@@ -58,12 +59,20 @@ const Home = () => {
                   </span>
                   <span className="inner-text-2 text-width">
                     You can also see my work on the following pages:
-                    <button className="bn5">Projects</button>
-                    <button className="bn5">About</button>
-                    <button className="bn5">Resume</button>
-                    <button className="bn5">Contact me</button>, or send me an
-                    email or message to
-                    <button className="bn5">Jmlsoteyza.dev@gmail.com</button>
+                    <NavLink to="Projects">
+                      <button className="bn5">Projects</button>,
+                    </NavLink>
+                    <NavLink to="About">
+                      <button className="bn5">About</button>,
+                    </NavLink>
+                    <br />
+                    <NavLink to="Contacts">
+                      <button className="bn5">Contact me</button>
+                    </NavLink>
+                    <span>, or send me an email or message to</span>
+                    <a href="mailto:jmlsoteyza.dev@gmail.com">
+                      <button className="bn5">Jmlsoteyza.dev@gmail.com</button>
+                    </a>
                   </span>
                 </div>
               </div>

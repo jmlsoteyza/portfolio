@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../../assets/images/jom-logo.svg";
+import Logo1 from "../../assets/images/jom-logo1.svg";
 import light from "../../assets/images/light.svg";
 import dark from "../../assets/images/dark.svg";
 import { ThemeFunction } from "../../App";
@@ -10,7 +11,11 @@ const Navbar = () => {
   return (
     <nav>
       <Link to="/">
-        <img src={Logo} alt={Logo} className="logo" />
+        {theme === "dark" ? (
+          <img src={Logo} alt={Logo} className="logo" />
+        ) : (
+          <img src={Logo1} alt={Logo1} className="logo" />
+        )}
       </Link>
       <ul>
         <NavLink
@@ -42,7 +47,12 @@ const Navbar = () => {
           {theme === "dark" ? (
             <img src={light} alt="moon" onClick={toggleTheme} />
           ) : (
-            <img src={dark} alt="sun" onClick={toggleTheme} />
+            <img
+              src={dark}
+              alt="sun"
+              onClick={toggleTheme}
+              className="second-img"
+            />
           )}
         </div>
       </ul>

@@ -6,7 +6,7 @@ const HomeLogo = ({ lineStyle }) => {
     <div className="bottom-icons">
       <span className="line-icons" style={lineStyle}></span>
       <div className="github-logo">
-        <a href="">
+        <a href="https://github.com/Jmlsoteyza">
           <svg
             width="21"
             height="19"
@@ -23,7 +23,7 @@ const HomeLogo = ({ lineStyle }) => {
         </a>
       </div>
       <div className="mail-logo">
-        <a href="">
+        <a href="mailto:jmlsoteyza.dev@gmail.com">
           <svg
             width="23.78"
             height="21.33"
@@ -40,7 +40,7 @@ const HomeLogo = ({ lineStyle }) => {
         </a>
       </div>
       <div className="linkedin-logo">
-        <a href="">
+        <a href="https://www.linkedin.com/in/jom-luis-oteyza/">
           <svg
             width="21"
             height="22"

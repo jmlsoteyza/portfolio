@@ -4,6 +4,7 @@
 @forward "resume";
 @forward "navbar";
 @forward "variables";
+@forward "mode-layout";
 @use "variables" as *;
 
 @font-face {
@@ -36,15 +37,6 @@ body {
   // overflow-y: hidden;
   overflow-x: hidden;
   color: #fff;
-}
-
-.Main-component {
-  height: 100vh;
-}
-
-#light{
- background-color: red;
-
 }
 
 img,
