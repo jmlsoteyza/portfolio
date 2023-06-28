@@ -73,6 +73,10 @@ ul li {
   cursor: pointer;
   padding: 0.6rem;
 
+  .sun {
+    transform: rotate(180deg);
+  }
+
   img {
     width: 25px;
     height: 25px;
@@ -82,4 +86,3 @@ ul li {
     }
   }
 }
-

@@ -45,7 +45,7 @@ const Navbar = () => {
         </NavLink>
         <div className="toggle-mode">
           {theme === "dark" ? (
-            <img src={light} alt="moon" onClick={toggleTheme} />
+            <img src={light} alt="moon" onClick={toggleTheme} className="sun"/>
           ) : (
             <img
               src={dark}

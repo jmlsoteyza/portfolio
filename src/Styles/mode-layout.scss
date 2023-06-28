@@ -49,4 +49,41 @@
       font-weight: 500;
     }
   }
+  .info-logo_right_flex p {
+    color: #0b1728;
+    font-weight: 600;
+  }
+
+  .face {
+    background-color: #0b1728c0;
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 8px 0px rgb(7, 27, 53);
+  }
+
+  // projects
+  .tabs-container_flex,
+  .tabs-container_flex_reverse {
+    background-color: #0b1728;
+
+    h1 {
+      color: #fff;
+    }
+
+    p {
+      color: #fff;
+    }
+
+    .projects_languages span {
+      background-color: #f5f5f5;
+      color: #272626;
+      font-weight: 500;
+    }
+  }
+  .btn {
+    border: 1px solid #0e0d0d;
+    color: #161616;
+  }
+  .btn.active {
+    border: none;
+  }
 }

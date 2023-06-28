@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import GradientColors from "./GradiantColors";
 import InfologoLinks from "./InfoLogoLinks";
 import "../Styles/gradient.css";
+import { ThemeFunction } from "../App";
 
 const InfoLogo = () => {
   const colors = GradientColors;
@@ -25,6 +26,8 @@ const InfoLogo = () => {
     background: `linear-gradient(180deg, ${currentColor.grad2} 0%, ${currentColor.grad1} 100%)`,
   };
 
+  const { theme } = useContext(ThemeFunction);
+
   return (
     <>
       <div className="info-logo_left">
@@ -32,11 +35,15 @@ const InfoLogo = () => {
           {iconImg.map((icons, key) => (
             <a href={icons.link} key={key}>
               <li key={key}>
-                <img
-                  className="info-logo_icons"
-                  src={icons.img}
-                  alt={icons.img}
-                />
+                {theme === "dark" ? (
+                  <img
+                    className="info-logo_icons"
+                    src={icons.img}
+                    alt={icons.img}
+                  />
+                ) : (
+                  <img src={icons.img2} className="info-logo_icons" />
+                )}
               </li>
             </a>
           ))}
