@@ -86,4 +86,19 @@
   .btn.active {
     border: none;
   }
+
+
+  ::placeholder {
+    color: #525252;
+  }
+
+  .card-icon svg path,
+  .address-icon svg path {
+    fill: #0e0d0d;
+  }
+  .card-icon, .address-icon {
+    span {
+      color: #111;
+    }
+  }
 }
