@@ -30,10 +30,10 @@ const ContactUse = (Validation, callback) => {
     if (Object.keys(errors).length === 0 && submit) {
       emailjs
         .sendForm(
-          "service_5311rde",
-          "template_etn8bl7",
+          "service_1fq0mf3",
+          "template_malr1ki",
           form.current,
-          "bTOLhsCw6LGQtWw3s"
+          "jliqo3oUnss48dWNg"
         )
         .then(
           (result) => {

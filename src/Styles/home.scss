@@ -158,16 +158,18 @@ top-left-line {
   stroke-width: 2px;
   stroke-dasharray: 500px;
   stroke-dashoffset: 500px;
-  animation: draw-stroke 6.5s linear forwards;
+  animation: draw-stroke 6s linear forwards;
 }
 @keyframes draw-stroke {
-   0% {
-      fill: #020a13;
-      stroke-dashoffset: 500px;
+  0% {
+    fill: #020a13;
+    stroke-dashoffset: 500px;
+  }
+  5% {
+    stroke-dashoffset: 500px;
   }
   10% {
     fill: #020a13;
-    stroke-dashoffset: 500px;
   }
   20% {
     fill: #020a13;
@@ -175,8 +177,8 @@ top-left-line {
   30% {
     fill: #020a13;
   }
-  40% {
-    fill: #020a13;
+  45% {
+    fill: #e1e1e1;
   }
   50% {
     fill: #e1e1e1;

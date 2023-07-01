@@ -17,11 +17,11 @@ const Contact = () => {
     <>
       <motion.section
         className="Contact-container"
-        initial={{ opacity: 0 }}
         key={"animatekey"}
+        initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        transition={{ duration: 0.5, ease: "easeInOut", delay: 0.125 }}
+        transition={{ duration: 0.5, ease: "easeIn" }}
         style={{ position: "absolute", width: "99.5%" }}
       >
         <div className="Contact-inner_container">

@@ -9,8 +9,7 @@ import GradientColors from "../GradiantColors";
 import { ThemeFunction } from "../../App";
 
 const Projects = () => {
-
-  const {theme} = useContext(ThemeFunction)
+  const { theme } = useContext(ThemeFunction);
 
   const colors = GradientColors;
 
@@ -42,11 +41,11 @@ const Projects = () => {
     <motion.section
       className="Projects-container"
       key={"animatekey"}
-      initial={{ opacity: 0 }}
+      initial={{ opacity: 0, }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ duration: 0.5, ease: "easeInOut", delay: 0.125 }}
-      style={{ position: "absolute"}}
+      transition={{ duration: 0.5, ease: "easeInOut"  }}
+      style={{ position: "absolute" }}
       id={theme}
     >
       <section className="Projects-inner_container">

@@ -36,11 +36,11 @@ const Home = () => {
   return (
     <motion.main
       className="Home-container"
-      initial={{ opacity: 0 }}
       key={"animatekey"}
+      initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ duration: 0.5, ease: "easeInOut", delay: 0.3 }}
+      transition={{ duration: 0.5, ease: "easeIn" }}
       style={{ position: "absolute", width: "99.23%" }}
     >
       <section className="home">
