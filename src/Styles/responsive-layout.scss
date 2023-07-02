@@ -1,4 +1,352 @@
-// NAVBAR
+.About-container,
+.Contact-container,
+.Projects-container {
+  padding-inline: 6rem;
+}
+@media (max-width: 1150px) {
+  .Home-container {
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+  }
+  .logo123 {
+    margin-left: 1.257rem;
+  }
+  .about-skills_animation {
+    margin-left: 1rem;
+  }
+}
+@media (max-width: 1050px) {
+  .project-info_img img {
+    min-width: 400px;
+  }
+}
+@media (max-width: 1100px) {
+  .tabs-container_flex .projects_desc {
+    padding-right: 0;
+  }
+  .tabs-container_flex_reverse .projects_desc {
+    padding-left: 0;
+  }
+  .info-logo_right {
+    right: 35px;
+  }
+  .info-logo_left {
+    left: 25px;
+  }
+}
+@media (max-width: 1020px) {
+  .tabs-container_flex_reverse,
+  .tabs-container_flex {
+    flex-direction: column;
+    gap: 0;
+  }
+  .projects_languages {
+    margin-top: 2.257rem;
+  }
+  .project-info_img {
+    max-width: 100%;
+  }
+  .projects-info_container {
+    max-width: 100%;
+  }
+  .tabs-container_flex_reverse {
+    .projects-title_header {
+      text-align: left !important;
+      margin-bottom: 1.5rem !important;
 
+      .projects-title_lineHeader {
+        float: left !important;
+      }
+    }
+    .projects_desc {
+      text-align: left !important;
+    }
+    .projects_languages {
+      float: left !important;
+    }
+    .github_container {
+      left: auto;
+      right: 0;
+      margin-left: 0;
+      margin-right: 3rem;
+      margin-bottom: -0.45rem;
+    }
+    .projects_live-site {
+      margin-right: 6.5rem;
+      bottom: -5.5%;
+    }
+  }
+  .tabs-container_flex {
+    .projects_live-site {
+      right: 0;
+      margin-right: 6.5rem;
+      left: auto;
+      bottom: -5.5%;
+    }
+    .github_container {
+      margin-bottom: -0.45rem;
+    }
+    .projects-title_header {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+@media (max-width: 975px) {
+  .about-flex_container {
+    flex-direction: column;
+  }
+  .About-skills_container {
+    margin-top: 20rem;
+    margin-bottom: 3.5rem;
+  }
+  .about-skills_animation .cubespinner {
+    margin-top: 5rem;
+  }
+  .main-component {
+    height: 150vh;
+  }
+}
+@media (max-width: 900px) {
+  .github_container {
+    margin-right: 0 !important;
+  }
+  .projects_live-site {
+    margin-right: 3.5rem !important;
+  }
+}
+// 850px to 650px
+@media (max-width: 850px) {
+  // home
+  .Home-container {
+    padding-left: 1rem;
+    padding-right: 0.5rem;
 
-// NAVBAR
+    .inner-container-pgraph {
+      padding-right: 2.5rem;
+    }
+
+    br {
+      display: none;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .inner-container-pgraph {
+    font-size: 14px;
+    text-align: justify;
+  }
+  .inner-text-2 {
+    padding-right: 0;
+  }
+  .about-flex_container .about-text_container p {
+    width: 100%;
+  }
+}
+@media (max-width: 780px) {
+  .about-inner_container .aboutme-header h1 {
+    font-size: 2.8rem;
+  }
+}
+@media (max-width: 733px) {
+  .inner-container-text {
+    margin-left: 6rem;
+    margin-right: 2rem;
+  }
+}
+@media (max-width: 700px) {
+  .info-logo_right {
+    right: 35px;
+  }
+  .info-logo_left {
+    left: 25px;
+  }
+  .About-container {
+    padding-inline: 5rem;
+  }
+  .info-logo_left {
+    left: 20px !important;
+  }
+}
+@media (max-width: 690px) {
+  .project-info_img img {
+    min-width: auto;
+    height: 16rem;
+  }
+  .tabs-container_flex_reverse {
+    .projects-title_header {
+      width: 100% !important;
+      text-align: center !important;
+      margin-bottom: 5.6rem !important;
+    }
+  }
+  .projects-title_header {
+    width: 100% !important;
+    text-align: center !important;
+    margin-bottom: 5rem !important;
+
+    h1 {
+      margin-top: 2rem !important;
+      color: #fff;
+    }
+    .projects-title_lineHeader {
+      display: none;
+    }
+  }
+  .projects_live-site {
+    top: 0 !important;
+    margin: 0 !important;
+    left: 0 !important;
+    right: auto !important;
+    bottom: auto !important;
+    margin-top: 6.5rem !important;
+  }
+}
+@media (max-width: 675px) {
+  .line1 {
+    display: none;
+  }
+  .inner-container-pgraph {
+    padding-right: 0;
+    margin-right: 0;
+  }
+  .inner-container-text {
+    margin-left: 5rem;
+  }
+  .about-inner_container .aboutme-header h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 640px) {
+  .about-inner_container .aboutme-header {
+    gap: 0;
+    justify-content: space-between;
+  }
+  .About-skills_logo {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 620px) {
+  .main-component {
+    height: 175vh;
+  }
+}
+// 850px to 650px
+@media (max-width: 550px) {
+  .Contact-Icons {
+    flex-direction: column;
+    align-items: baseline;
+    gap: 0.75rem;
+  }
+}
+@media (max-width: 530px) {
+  .inner-text-2 {
+    display: none;
+  }
+  .inner-container-pgraph {
+    padding-right: 0.3rem;
+  }
+  .svg_name {
+    margin-left: -1.257rem;
+  }
+  .bottom-icons {
+    flex-direction: column-reverse;
+    left: 0;
+    bottom: 0;
+
+    .line-icons {
+      width: 0.125rem;
+      height: 4.7rem;
+    }
+  }
+  .aboutme-line {
+    display: none;
+  }
+  .Contact-header {
+    justify-content: center;
+    font-size: 3rem;
+  }
+  .about-inner_container .aboutme-header {
+    justify-content: center;
+  }
+  .Projects_header {
+    justify-content: center;
+
+    h1 {
+      font-size: 3rem;
+    }
+  }
+  .about-flex_container .about-text_container p {
+    font-size: 12.5px;
+    padding-right: 0;
+    text-align: justify;
+  }
+}
+@media (max-width: 500px) {
+  .Projects-container {
+    padding-inline: 4.5rem;
+  }
+}
+@media (max-width: 440px) {
+  .about-skills_animation .cubespinner {
+    margin-left: 1rem;
+  }
+  .project-info_img img {
+    height: 11rem;
+  }
+  .tabs-container_flex,
+  .tabs-container_flex_reverse {
+    padding: 1rem;
+  }
+  .projects_desc {
+    p {
+      font-size: 13.5px;
+    }
+  }
+  .github_container {
+    bottom: auto !important;
+    margin-bottom: 0 !important;
+    top: 0;
+    margin-top: 5.65rem;
+  }
+  .projects_languages {
+    justify-content: center !important;
+    width: 100% !important;
+  }
+}
+@media (max-width: 430px) {
+  .About-skills_logo {
+    gap: 1.257rem;
+  }
+  .Contact-Icons {
+    span {
+      font-size: 13.5px !important;
+    }
+  }
+}
+@media (max-width: 390px) {
+  .projects_languages {
+    gap: 1rem;
+
+    span {
+      padding: 0 !important;
+    }
+
+    #light {
+      .projects_languages {
+        span {
+          padding: 0 !important;
+          color: #fff !important;
+          background-color: transparent !important;
+        }
+      }
+    }
+  }
+  .Projects-tabs_container .tabs_btn .btn {
+    font-size: 13px !important;
+  }
+}
+@media (max-width: 375px) {
+  .main-component {
+    height: 200vh;
+  }
+}

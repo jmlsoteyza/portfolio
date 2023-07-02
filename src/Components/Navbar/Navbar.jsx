@@ -28,7 +28,7 @@ const Navbar = () => {
           <img src={Logo1} alt={Logo1} className="logo" />
         )}
       </Link>
-      <ul className={show ? "active" : ""}>
+      <ul className={show ? "ul-container active" : "ul-container"}>
         <NavLink
           className={({ isActive }) =>
             isActive ? "Link-color active" : "Link-color"

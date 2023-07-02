@@ -16,7 +16,7 @@ nav {
   transform: scale(1.07);
   transition: all 0.1s ease-in-out;
 }
-ul {
+.ul-container {
   display: flex;
   flex-direction: row;
   list-style: none;
@@ -24,7 +24,7 @@ ul {
   position: relative;
   align-items: center;
 }
-ul li {
+.ul-container li {
   font-size: 0.875rem;
   font-weight: 500;
   display: block;
@@ -100,7 +100,6 @@ ul li {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  overflow: hidden;
   display: none;
   span {
     position: absolute;
@@ -152,10 +151,9 @@ ul li {
     margin-right: 5.25rem;
   }
   .logo123 {
-    margin-left: 1.257rem;
     z-index: 7;
   }
-  ul {
+  .ul-container {
     position: fixed;
     flex-direction: column;
     align-items: center;
@@ -166,7 +164,6 @@ ul li {
     bottom: 0;
     top: 0;
     color: #fff;
-    overflow: hidden;
     background-color: black;
     z-index: 2;
     opacity: 0;
@@ -174,13 +171,14 @@ ul li {
     gap: 3rem;
   }
 
-  ul li {
-    font-size: 26px;
-    font-family: "Gotham Book";
+  .ul-container li {
+    font-size: 22.5px;
+    font-weight: 600;
+    font-family: Georgia, "Times New Roman", Times, serif;
   }
 
   #light {
-    ul {
+    .ul-container {
       background-color: #e1e1e1;
     }
     .toggle {
@@ -192,7 +190,7 @@ ul li {
     }
   }
 
-  ul.active {
+  .ul-container.active {
     opacity: 1;
   }
 }

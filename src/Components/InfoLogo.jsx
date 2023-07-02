@@ -31,7 +31,7 @@ const InfoLogo = () => {
   return (
     <>
       <div className="info-logo_left">
-        <ul>
+        <ul className="ul-icon">
           {iconImg.map((icons, key) => (
             <a href={icons.link} key={key}>
               <li key={key}>
