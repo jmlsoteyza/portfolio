@@ -17,13 +17,13 @@
 .aboutme-line {
     width: 13rem;
     background: linear-gradient(90deg, var(--grad-2) 0%, var(--grad-1) 100%);
-    height: 1px;
+    height: 0.063rem;
 }
 
 .projects_line {
     background: linear-gradient(90deg, var(--grad-2) 0%, var(--grad-1) 100%);
     width: 4.55rem;
-    height: 1px;
+    height: 0.063rem;
     display: block;
     margin-top: 0.5rem;
     transition: all 0.3s ease;
@@ -33,7 +33,7 @@
     display: block;
     background: linear-gradient(90deg, var(--grad-2) 0%, var(--grad-1) 100%);
     width: 100%;
-    height: 1px;
+    height: 0.063rem;
 
 }
 
@@ -129,9 +129,9 @@
 /* left info logo */
 
 .info-logo_left {
-    width: 40px;
+    width: 2.5rem;
     position: fixed;
-    left: 40px;
+    left: 2.5rem;
     bottom: 0;
     right: auto;
     color: #e1e1e1;
@@ -139,7 +139,7 @@
 
 .info-logo_right {
     position: fixed;
-    right: 60px;
+    right: 3.75rem;
     left: auto;
     bottom: 0;
     color: #e1e1e1;
@@ -161,11 +161,11 @@
 
 .info-line {
     display: block;
-    width: 1px;
-    height: 90px !important;
+    width: 0.063rem;
+    height: 5.625rem !important;
     background: linear-gradient(0deg, var(--grad-2) 0%, var(--grad-1) 100%);
     margin: 0 auto;
-    margin-top: 34px;
+    margin-top: 2.125rem;
 }
 
 .info-logo_right_flex {
@@ -180,7 +180,7 @@
     font-size: 11.2px;
     font-family: 'Fira Mono', monospace;
     letter-spacing: 0.125rem;
-    line-height: 18px;
+    line-height: 1.125rem;
     font-weight: normal;
     color: #e1e1e1;
 }

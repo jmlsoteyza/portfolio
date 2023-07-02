@@ -14,7 +14,7 @@
     // position: relative;
 
     p {
-      font-size: 14.5px;
+      font-size: 0.906rem;
       margin-bottom: -1rem;
       margin-top: 0.95rem;
       margin-left: 0.4rem;
@@ -31,15 +31,15 @@
     }
 
     input {
-      padding: 15px 18px;
+      padding: 0.938rem 1.125rem;
       outline: none;
       width: 100%;
     }
 
     textarea {
       outline: none;
-      height: 140px;
-      padding: 18px 18px;
+      height: 8.75rem;
+      padding: 1.125rem;
       width: 100%;
     }
 
@@ -94,8 +94,8 @@
   align-items: center;
 
   svg {
-    width: 27px;
-    height: 27px;
+    width: 1.688rem;
+    height: 1.688rem;
   }
 
   .card-icon {
@@ -116,7 +116,7 @@
     justify-content: space-between;
 
     span {
-      font-size: 15px;
+      font-size: 0.938rem;
       font-family: Arimo;
       color: #e1e1e1;
     }
@@ -130,7 +130,7 @@
   margin-top: 7rem;
 
   p {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 2rem;
   }
 }

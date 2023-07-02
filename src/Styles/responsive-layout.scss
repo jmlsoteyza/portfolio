@@ -17,7 +17,7 @@
 }
 @media (max-width: 1050px) {
   .project-info_img img {
-    min-width: 400px;
+    min-width: 25rem;
   }
 }
 @media (max-width: 1100px) {
@@ -28,10 +28,10 @@
     padding-left: 0;
   }
   .info-logo_right {
-    right: 35px;
+    right: 2.188rem;
   }
   .info-logo_left {
-    left: 25px;
+    left: 1.563rem;
   }
 }
 @media (max-width: 1020px) {
@@ -102,8 +102,14 @@
   .about-skills_animation .cubespinner {
     margin-top: 5rem;
   }
+  #light .About-container {
+    background-color: #e1e1e1;
+  }
+  .About-container {
+    width: 100% !important;
+  }
   .main-component {
-    height: 150vh;
+    overflow: hidden;
   }
 }
 @media (max-width: 900px) {
@@ -155,16 +161,16 @@
 }
 @media (max-width: 700px) {
   .info-logo_right {
-    right: 35px;
+    right: 2.188rem;
   }
   .info-logo_left {
-    left: 25px;
+    left: 1.563rem;
   }
   .About-container {
     padding-inline: 5rem;
   }
   .info-logo_left {
-    left: 20px !important;
+    left: 1.25rem !important;
   }
 }
 @media (max-width: 690px) {
@@ -226,9 +232,6 @@
   }
 }
 @media (max-width: 620px) {
-  .main-component {
-    height: 175vh;
-  }
 }
 // 850px to 650px
 @media (max-width: 550px) {
@@ -276,7 +279,7 @@
     }
   }
   .about-flex_container .about-text_container p {
-    font-size: 12.5px;
+    font-size: 0.781rem;
     padding-right: 0;
     text-align: justify;
   }
@@ -299,7 +302,7 @@
   }
   .projects_desc {
     p {
-      font-size: 13.5px;
+      font-size: 0.844rem;
     }
   }
   .github_container {
@@ -342,11 +345,6 @@
     }
   }
   .Projects-tabs_container .tabs_btn .btn {
-    font-size: 13px !important;
-  }
-}
-@media (max-width: 375px) {
-  .main-component {
-    height: 200vh;
+    font-size: 0.813rem !important;
   }
 }

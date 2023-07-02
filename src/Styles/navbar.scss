@@ -42,10 +42,10 @@ nav {
   content: "";
   position: absolute;
   background-color: #ffff;
-  height: 0.5px;
+  height: 0.031rem;
   width: 100%;
   left: 0;
-  bottom: 3px;
+  bottom: 0.188rem;
   transition: transform 0.25s ease-out;
   transform: scaleX(0);
   transform-origin: center;
@@ -80,11 +80,11 @@ nav {
   }
 
   img {
-    width: 25px;
-    height: 25px;
+    width: 1.563rem;
+    height: 1.563rem;
 
     &.second-img {
-      padding: 2.5px;
+      padding: 0.156rem;
     }
   }
 }
@@ -92,10 +92,10 @@ nav {
 // NAVBAR
 .toggle {
   position: relative;
-  width: 35px;
-  height: 35px;
+  width: 2.188rem;
+  height: 2.188rem;
   background-color: #ffffffc9;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,8 +103,8 @@ nav {
   display: none;
   span {
     position: absolute;
-    width: 20px;
-    height: 3px;
+    width: 1.25rem;
+    height: 0.188rem;
     background-color: black;
     border-radius: 4px;
     transition: 0.5s;
@@ -159,20 +159,22 @@ nav {
     align-items: center;
     justify-content: center;
     text-align: center;
-    max-width: 60rem;
-    width: 100%;
     bottom: 0;
     top: 0;
+    right: 0;
+    left: 0;
     color: #fff;
     background-color: black;
     z-index: 2;
     opacity: 0;
     transition: all 0.3s;
+    overflow: hidden;
     gap: 3rem;
+    visibility: hidden;
   }
 
   .ul-container li {
-    font-size: 22.5px;
+    font-size: 1.406rem;
     font-weight: 600;
     font-family: Georgia, "Times New Roman", Times, serif;
   }
@@ -192,5 +194,7 @@ nav {
 
   .ul-container.active {
     opacity: 1;
+    overflow: hidden !important;
+    visibility: visible;
   }
 }
