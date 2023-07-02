@@ -3,6 +3,7 @@
 .Projects-container {
   padding-inline: 6rem;
 }
+
 @media (max-width: 1150px) {
   .Home-container {
     padding-left: 1rem;
@@ -239,6 +240,10 @@
     flex-direction: column;
     align-items: baseline;
     gap: 0.75rem;
+  }
+  #light .Contact-container {
+    height: 100%;
+    background-color: #e1e1e1;
   }
 }
 @media (max-width: 530px) {
