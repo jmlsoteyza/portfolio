@@ -353,3 +353,11 @@
     font-size: 0.813rem !important;
   }
 }
+@media (max-width: 375px) and (max-height: 750) {
+  .inner-container-text {
+    margin-top: 4rem;
+  }
+  #light .svg_name {
+    color: #272626;
+  }
+}
