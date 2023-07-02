@@ -3,6 +3,7 @@ import Scss from "../../assets/images/scss.svg";
 import react from "../../assets/images/react.svg";
 import squareJS from "../../assets/images/js.svg";
 import css from "../../assets/images/css.svg";
+import git from "../../assets/images/git-alt.svg"
 
 export const AboutTextData = [
   {
@@ -37,6 +38,10 @@ export const skillsLogo = [
     id: 5,
     img: Scss,
   },
+  {
+    id: 6,
+    img: git,
+  },
 ];
 
 export const logoSpinner = [
@@ -67,7 +72,7 @@ export const logoSpinner = [
   },
   {
     id: 11,
-    img: Html,
+    img: git,
     class: "face6 face",
   },
 ];
