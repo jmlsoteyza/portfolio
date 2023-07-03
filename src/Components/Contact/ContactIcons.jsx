@@ -22,7 +22,7 @@ const ContactIcons = (props) => {
             </g>
           </g>
         </svg>
-        <span>054 3196 753</span>
+        <span>054 561 7393</span>
       </div>
       <div className="address-icon">
         <svg
