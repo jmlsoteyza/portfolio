@@ -41,7 +41,7 @@
   }
 
   h1 {
-    color: #000;
+    color: #000 !important;
   }
   .about-text_container {
     p {
@@ -66,7 +66,7 @@
     background-color: #0b1728;
 
     h1 {
-      color: #fff;
+      color: #fff !important;
     }
 
     p {
@@ -87,7 +87,6 @@
     border: none;
   }
 
-
   ::placeholder {
     color: #525252;
   }
@@ -96,14 +95,15 @@
   .address-icon svg path {
     fill: #0e0d0d;
   }
-  .card-icon, .address-icon {
+  .card-icon,
+  .address-icon {
     span {
       color: #111;
     }
   }
 
   .success-message {
-     color: #111;
+    color: #111;
   }
 
   .credit-portfolio-link {
