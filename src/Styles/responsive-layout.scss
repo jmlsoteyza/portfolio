@@ -294,6 +294,22 @@
     padding-inline: 4.5rem;
   }
 }
+@media (max-width: 480px) {
+  .info-logo_right_flex,
+  .info-logo_left {
+    display: none;
+  }
+  .About-container,
+  .Projects-container,
+  .Contact-container {
+    padding-inline: 1.75rem;
+  }
+  .About-skills_logo {
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
 @media (max-width: 440px) {
   .about-skills_animation .cubespinner {
     margin-left: 1rem;
@@ -322,9 +338,6 @@
   }
 }
 @media (max-width: 430px) {
-  .About-skills_logo {
-    gap: 1.257rem;
-  }
   .Contact-Icons {
     span {
       font-size: 13.5px !important;
@@ -354,15 +367,9 @@
   }
 }
 @media (max-width: 375px) {
-  .home {
-    max-height: auto !important;
-    margin: 0;
-    height: 30rem;
-  }
   .svg_name {
-    margin-top: -3rem;
+    margin-top: -6rem;
   }
-
   #light .svg_name {
     color: #272626;
     fill: #272626;

@@ -29,39 +29,34 @@ const Navbar = () => {
         )}
       </Link>
       <ul className={show ? "ul-container active" : "ul-container"}>
-        <li className="line line-color">
-          <NavLink
-            className={({ isActive }) =>
-              isActive ? "Link-color active" : "Link-color"
-            }
-            to="About"
-            onClick={handleCloseNav}
-          >
-            About
-          </NavLink>
-        </li>
-        <li className="line line-color">
-          <NavLink
-            className={({ isActive }) =>
-              isActive ? "Link-color active" : "Link-color"
-            }
-            to="Projects"
-            onClick={handleCloseNav}
-          >
-            Projects
-          </NavLink>
-        </li>
-        <li className="line line-color">
-          <NavLink
-            className={({ isActive }) =>
-              isActive ? "Link-color active" : "Link-color"
-            }
-            to="Contacts"
-            onClick={handleCloseNav}
-          >
-            Contacts
-          </NavLink>
-        </li>
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? "Link-color active" : "Link-color"
+          }
+          to="About"
+          onClick={handleCloseNav}
+        >
+          <li className="line line-color">About</li>
+        </NavLink>
+
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? "Link-color active" : "Link-color"
+          }
+          to="Projects"
+          onClick={handleCloseNav}
+        >
+          <li className="line line-color">Projects</li>
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? "Link-color active" : "Link-color"
+          }
+          to="Contacts"
+          onClick={handleCloseNav}
+        >
+          <li className="line line-color">Contacts</li>
+        </NavLink>
         <div className="toggle-mode">
           {theme === "dark" ? (
             <img src={light} alt="moon" onClick={toggleTheme} className="sun" />
