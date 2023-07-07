@@ -192,6 +192,7 @@ nav {
   }
 
   .ul-container.active {
+    position: fixed;
     overflow: hidden !important;
     display: flex;
     z-index: 999;

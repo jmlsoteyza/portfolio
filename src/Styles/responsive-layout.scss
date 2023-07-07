@@ -300,6 +300,9 @@
   }
 }
 @media (max-width: 480px) {
+  .inner-container-pgraph {
+    padding-right: 0;
+  }
   .info-logo_right_flex,
   .info-logo_left {
     display: none;
