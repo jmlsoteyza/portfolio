@@ -137,7 +137,7 @@ nav {
 @media (max-width: 985px) {
   .toggle {
     display: flex;
-    z-index: 5;
+    z-index: 1003;
     margin-right: 1.257rem;
   }
   .toggle-mode {
@@ -145,13 +145,13 @@ nav {
   }
   .mode-off {
     display: block;
-    z-index: 9;
+    z-index: 1002;
     position: absolute;
     right: 0;
     margin-right: 5.25rem;
   }
   .logo123 {
-    z-index: 7;
+    z-index: 1001;
   }
   .ul-container {
     position: fixed;
@@ -165,7 +165,7 @@ nav {
     left: 0;
     color: #fff;
     background-color: black;
-    z-index: 2;
+    z-index: 1000;
     transition: all 0.3s;
     overflow: hidden;
     gap: 3rem;
@@ -194,5 +194,6 @@ nav {
   .ul-container.active {
     overflow: hidden !important;
     display: flex;
+    z-index: 999;
   }
 }
