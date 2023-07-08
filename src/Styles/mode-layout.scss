@@ -3,14 +3,6 @@
 }
 #dark {
   transition: all 0.5s ease;
-
-  @keyframes draw-stroke {
-    100% {
-      stroke-dashoffset: 0;
-      fill: #e1e1e1;
-      stroke-width: 0;
-    }
-  }
 }
 #light {
   background-color: #e1e1e1;
@@ -123,4 +115,5 @@
     color: #111;
     font-weight: 500;
   }
+  
 }

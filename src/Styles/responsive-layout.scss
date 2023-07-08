@@ -286,15 +286,8 @@
   }
 }
 @media (max-width: 500px) {
-  #light {
-    @keyframes draw-stroke {
-      100% {
-        stroke-dashoffset: 0;
-        fill: #0b1728;
-        stroke-width: 0;
-      }
-    }
-  }
+   
+  
   .Projects-container {
     padding-inline: 4.5rem;
   }
@@ -378,8 +371,5 @@
   .svg_name {
     margin-top: -6rem;
   }
-  #light .svg_name {
-    color: #272626;
-    fill: #272626;
-  }
+
 }
