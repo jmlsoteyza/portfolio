@@ -25,7 +25,7 @@ const Navbar = () => {
     } else {
       document.body.classList.remove("navbar-close");
     }
-  }, [show]);
+  }, []);
 
   return (
     <nav>
