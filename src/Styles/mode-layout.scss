@@ -3,6 +3,14 @@
 }
 #dark {
   transition: all 0.5s ease;
+
+  @keyframes draw-stroke {
+    100% {
+      stroke-dashoffset: 0;
+      fill: #e1e1e1;
+      stroke-width: 0;
+    }
+  }
 }
 #light {
   background-color: #e1e1e1;
@@ -62,6 +70,7 @@
     background-color: #0b1728c0;
     border: 1px solid #ffffff;
     box-shadow: 0 0 8px 0px rgb(7, 27, 53);
+    z-index: -1;
   }
 
   // projects
