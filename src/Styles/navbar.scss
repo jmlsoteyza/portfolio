@@ -166,9 +166,11 @@ nav {
     color: #fff;
     background-color: black;
     z-index: 2;
-    gap: 3rem;
+    opacity: 0;
     transition: all 0.3s;
-    transform: translateX(1000px);
+    overflow: hidden;
+    gap: 3rem;
+    visibility: hidden;
   }
 
   .ul-container li {
@@ -191,7 +193,8 @@ nav {
   }
 
   .ul-container.active {
-    transform: translateX(0);
+    opacity: 1;
     overflow: hidden !important;
+    visibility: visible;
   }
 }

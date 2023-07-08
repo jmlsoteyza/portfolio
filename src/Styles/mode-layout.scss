@@ -40,8 +40,12 @@
     transition: all 0.25s ease-in-out;
   }
 
-  h1 {
-    color: #000 !important;
+  .About-container,
+  .Contact-container,
+  .Projects-container {
+    h1 {
+      color: #000;
+    }
   }
   .about-text_container {
     p {
@@ -74,8 +78,8 @@
     }
 
     .projects_languages span {
-      background-color: #f5f5f5;
-      color: #272626;
+      background-color: transparent;
+      color: #f5f5f5;
       font-weight: 500;
     }
   }
