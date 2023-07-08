@@ -197,13 +197,9 @@ nav {
   .ul-container.active {
     opacity: 1;
     visibility: visible;
+    top: -15px;
   }
   .navbar-close {
     overflow: hidden;
-  }
-}
-@media (max-width: 480px) {
-  .ul-container {
-    top: -15px;
   }
 }
