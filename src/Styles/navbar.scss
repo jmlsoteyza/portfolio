@@ -171,7 +171,6 @@ nav {
     z-index: 2;
     opacity: 0;
     transition: all 0.3s;
-    overflow: hidden;
     gap: 3rem;
     visibility: hidden;
   }
@@ -197,7 +196,9 @@ nav {
 
   .ul-container.active {
     opacity: 1;
-    overflow: hidden !important;
     visibility: visible;
+  }
+  .navbar-close {
+    overflow: hidden;
   }
 }

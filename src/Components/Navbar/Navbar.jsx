@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../../assets/images/jom-logo.svg";
 import Logo1 from "../../assets/images/jom-logo1.svg";
@@ -18,6 +18,14 @@ const Navbar = () => {
   const handleNavClick = () => {
     setShow(!show);
   };
+
+  useEffect(() => {
+    if (show) {
+      document.body.classList.add("navbar-close");
+    } else {
+      document.body.classList.remove("navbar-close");
+    }
+  }, [show]);
 
   return (
     <nav>
