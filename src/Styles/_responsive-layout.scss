@@ -286,8 +286,6 @@
   }
 }
 @media (max-width: 500px) {
-   
-  
   .Projects-container {
     padding-inline: 4.5rem;
   }
@@ -320,11 +318,12 @@
     align-items: center;
     justify-content: center;
   }
+  .about-skills_animation {
+    margin-left: -0.356rem;
+  }
 }
 @media (max-width: 440px) {
-  .about-skills_animation .cubespinner {
-    margin-left: 1rem;
-  }
+
   .project-info_img img {
     height: 11rem;
   }
