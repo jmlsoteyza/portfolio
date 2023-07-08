@@ -137,7 +137,7 @@ nav {
 @media (max-width: 985px) {
   .toggle {
     display: flex;
-    z-index: 5;
+    z-index: 3;
     margin-right: 1.257rem;
   }
   .toggle-mode {
@@ -145,13 +145,16 @@ nav {
   }
   .mode-off {
     display: block;
-    z-index: 9;
+    z-index: 4;
     position: absolute;
     right: 0;
     margin-right: 5.25rem;
   }
+  nav {
+    z-index: 6;
+  }
   .logo123 {
-    z-index: 7;
+    z-index: 5;
   }
   .ul-container {
     position: fixed;
