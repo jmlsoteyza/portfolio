@@ -1055,6 +1055,14 @@ nav {
   padding-inline: 6rem;
 }
 
+@media (max-width: 1280px) {
+  .info-logo_right {
+    right: 2.188rem;
+  }
+  .info-logo_left {
+    left: 1.563rem;
+  }
+}
 @media (max-width: 1150px) {
   .Home-container {
     padding-left: 1rem;
@@ -1078,12 +1086,6 @@ nav {
   }
   .tabs-container_flex_reverse .projects_desc {
     padding-left: 0;
-  }
-  .info-logo_right {
-    right: 2.188rem;
-  }
-  .info-logo_left {
-    left: 1.563rem;
   }
 }
 @media (max-width: 1020px) {
