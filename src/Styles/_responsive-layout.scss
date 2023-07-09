@@ -320,7 +320,6 @@
   .about-skills_animation {
     margin-left: -0.356rem;
   }
-  
 }
 @media (max-width: 440px) {
   .project-info_img img {
@@ -376,7 +375,7 @@
   }
   .inner-text {
     padding-left: 1rem;
-    margin-right: 1.5rem;
+    padding-right: 3rem;
   }
   .svg_name {
     margin-left: 0.7rem;
@@ -401,5 +400,10 @@
 @media (max-height: 700px) {
   .home {
     height: 30rem;
+  }
+}
+@media (max-height: 667px) {
+  .home {
+    height: 27.5rem;
   }
 }
