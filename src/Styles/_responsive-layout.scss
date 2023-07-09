@@ -323,7 +323,6 @@
   }
 }
 @media (max-width: 440px) {
-
   .project-info_img img {
     height: 11rem;
   }
@@ -369,5 +368,26 @@
 @media (max-width: 375px) {
   .svg_name {
     margin-top: -6rem;
+  }
+}
+
+// width and height
+@media (max-height: 700px) {
+  .Home-container {
+    height: 80vh;
+  }
+  .main-component {
+    height: 120vh;
+  }
+  .info-logo_left {
+    left: 1.5rem;
+  }
+  .info-logo_right {
+    right: 2.75rem;
+  }
+}
+@media screen and (max-width: 480px), screen and (max-height: 700px) {
+  .Home-container {
+    height: 70vh;
   }
 }

@@ -164,6 +164,7 @@
   border-radius: 0.3rem;
   display: block;
   color: #e1e1e1;
+  height: calc(100vh - 16rem);
 }
 
 .test456 {
@@ -827,6 +828,9 @@ nav {
   background-color: #e1e1e1;
   transition: all 0.5s ease;
 }
+#light .Home-container {
+  background-color: #e1e1e1;
+}
 #light .Link-color,
 #light .inner-container-text {
   color: #0b1728;
@@ -1388,6 +1392,25 @@ nav {
 @media (max-width: 375px) {
   .svg_name {
     margin-top: -6rem;
+  }
+}
+@media (max-height: 700px) {
+  .Home-container {
+    height: 80vh;
+  }
+  .main-component {
+    height: 120vh;
+  }
+  .info-logo_left {
+    left: 1.5rem;
+  }
+  .info-logo_right {
+    right: 2.75rem;
+  }
+}
+@media screen and (max-width: 480px), screen and (max-height: 700px) {
+  .Home-container {
+    height: 70vh;
   }
 }
 @font-face {
