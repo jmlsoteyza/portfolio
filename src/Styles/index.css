@@ -2,10 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Fira+Mono&display=swap");
-.About-container {
-  padding-bottom: 10.8rem;
-}
-
 .about-inner_container {
   max-width: 70rem;
   width: 100%;
@@ -168,8 +164,6 @@
   border-radius: 0.3rem;
   display: block;
   color: #e1e1e1;
-  height: 100%;
-  padding-bottom: 1.85rem;
 }
 
 .test456 {
@@ -929,10 +923,6 @@ nav {
   font-weight: 500;
 }
 
-.Contact-container {
-  padding-bottom: 6.36rem;
-}
-
 .Contact-inner_container {
   max-width: 70rem;
   width: 100%;
@@ -1472,16 +1462,6 @@ body {
   accent-color: #c6c6c6;
 }
 
-body::-webkit-scrollbar .Home-container {
-  display: none;
-}
-body::-webkit-scrollbar .About-container {
-  display: none;
-}
-body::-webkit-scrollbar .Contact-container {
-  display: none;
-}
-
 img,
 picture,
 svg,
@@ -1580,14 +1560,27 @@ a {
   text-decoration: none;
 }
 
+.Home-container,
 .Projects-container,
 .Contact-container,
 .About-container {
-  width: 100%;
   margin: 0;
   height: 100%;
+  overflow-y: hidden;
 }
 
 .Projects-container {
   padding-bottom: 1rem;
+}
+
+.Contact-container {
+  padding-bottom: 6.36rem;
+}
+
+.Home-container {
+  padding-bottom: 1.85rem;
+}
+
+.About-container {
+  padding-bottom: 10.8rem;
 }
