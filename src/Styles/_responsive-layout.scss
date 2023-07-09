@@ -372,12 +372,17 @@
 }
 
 // width and height
+@media (max-height: 845px) {
+  .main-component {
+    height: 118vh;
+  }
+}
 @media (max-height: 700px) {
   .Home-container {
     height: 80vh;
   }
   .main-component {
-    height: 120vh;
+    height: 125vh;
   }
   .info-logo_left {
     left: 1.5rem;
@@ -392,5 +397,10 @@
   }
   .main-component {
     height: 125vh;
+  }
+}
+@media (max-height: 600px) {
+  .main-component {
+    height: 140vh;
   }
 }
