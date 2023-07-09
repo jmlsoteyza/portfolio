@@ -320,6 +320,7 @@
   .about-skills_animation {
     margin-left: -0.356rem;
   }
+  
 }
 @media (max-width: 440px) {
   .project-info_img img {
@@ -367,6 +368,19 @@
 @media (max-width: 375px) {
   .svg_name {
     margin-top: -6rem;
+  }
+  .inner-container-text {
+    margin-left: 2rem;
+    padding-right: 0;
+    margin-right: 0;
+  }
+  .inner-text {
+    padding-left: 1rem;
+    margin-right: 1.5rem;
+  }
+  .svg_name {
+    margin-left: 0.7rem;
+    width: 4rem;
   }
 }
 
