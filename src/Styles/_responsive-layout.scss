@@ -238,7 +238,6 @@
     gap: 0.75rem;
   }
   #light .Contact-container {
-    height: 120vh;
     background-color: #e1e1e1;
   }
 }
@@ -372,35 +371,21 @@
 }
 
 // width and height
-@media (max-height: 845px) {
-  .main-component {
-    height: 118vh;
+@media (max-height: 800px) {
+  .home {
+    height: 32rem;
+  }
+  .About-container {
+    padding-bottom: 5rem;
+  }
+}
+@media (max-height: 750px) {
+  .home {
+    margin: 2.2rem auto;
   }
 }
 @media (max-height: 700px) {
-  .Home-container {
-    height: 80vh;
-  }
-  .main-component {
-    height: 125vh;
-  }
-  .info-logo_left {
-    left: 1.5rem;
-  }
-  .info-logo_right {
-    right: 2.75rem;
-  }
-}
-@media screen and (max-width: 480px), screen and (max-height: 650px) {
-  .Home-container {
-    height: 80vh;
-  }
-  .main-component {
-    height: 125vh;
-  }
-}
-@media (max-height: 600px) {
-  .main-component {
-    height: 140vh;
+  .home {
+    height: 30rem;
   }
 }

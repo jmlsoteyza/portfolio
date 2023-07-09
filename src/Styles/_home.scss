@@ -5,7 +5,8 @@
   border-radius: 0.3rem;
   display: block;
   color: #e1e1e1;
-  height: calc(100vh - 16rem);
+  height: 100%;
+  padding-bottom: 1.85rem;
 }
 .test456 {
   position: relative;
@@ -15,8 +16,7 @@
   max-width: 70rem;
   margin: 4.2rem auto;
   position: relative;
-  max-height: 37rem;
-  height: 100%;
+  height: 37rem;
 }
 .inner-container {
   display: flex;

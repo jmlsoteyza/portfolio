@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Fira+Mono&display=swap");
+.About-container {
+  padding-bottom: 10.8rem;
+}
+
 .about-inner_container {
   max-width: 70rem;
   width: 100%;
@@ -164,7 +168,8 @@
   border-radius: 0.3rem;
   display: block;
   color: #e1e1e1;
-  height: calc(100vh - 16rem);
+  height: 100%;
+  padding-bottom: 1.85rem;
 }
 
 .test456 {
@@ -176,8 +181,7 @@
   max-width: 70rem;
   margin: 4.2rem auto;
   position: relative;
-  max-height: 37rem;
-  height: 100%;
+  height: 37rem;
 }
 
 .inner-container {
@@ -817,7 +821,7 @@ nav {
   }
 }
 .main-component {
-  height: 100vh;
+  height: 100%;
 }
 
 #dark {
@@ -827,9 +831,6 @@ nav {
 #light {
   background-color: #e1e1e1;
   transition: all 0.5s ease;
-}
-#light .Home-container {
-  background-color: #e1e1e1;
 }
 #light .Link-color,
 #light .inner-container-text {
@@ -926,6 +927,10 @@ nav {
 #light .credit-portfolio-link {
   color: #111;
   font-weight: 500;
+}
+
+.Contact-container {
+  padding-bottom: 6.36rem;
 }
 
 .Contact-inner_container {
@@ -1269,7 +1274,6 @@ nav {
     gap: 0.75rem;
   }
   #light .Contact-container {
-    height: 120vh;
     background-color: #e1e1e1;
   }
 }
@@ -1394,36 +1398,22 @@ nav {
     margin-top: -6rem;
   }
 }
-@media (max-height: 845px) {
-  .main-component {
-    height: 118vh;
+@media (max-height: 800px) {
+  .home {
+    height: 32rem;
+  }
+  .About-container {
+    padding-bottom: 5rem;
+  }
+}
+@media (max-height: 750px) {
+  .home {
+    margin: 2.2rem auto;
   }
 }
 @media (max-height: 700px) {
-  .Home-container {
-    height: 80vh;
-  }
-  .main-component {
-    height: 125vh;
-  }
-  .info-logo_left {
-    left: 1.5rem;
-  }
-  .info-logo_right {
-    right: 2.75rem;
-  }
-}
-@media screen and (max-width: 480px), screen and (max-height: 650px) {
-  .Home-container {
-    height: 80vh;
-  }
-  .main-component {
-    height: 125vh;
-  }
-}
-@media (max-height: 600px) {
-  .main-component {
-    height: 140vh;
+  .home {
+    height: 30rem;
   }
 }
 @font-face {
@@ -1575,4 +1565,5 @@ a {
 .About-container {
   width: 100%;
   margin: 0;
+  height: 100%;
 }
