@@ -164,7 +164,6 @@
   border-radius: 0.3rem;
   display: block;
   color: #e1e1e1;
-  height: calc(100vh - 16rem);
 }
 
 .test456 {
@@ -752,6 +751,10 @@ nav {
   transform: translateX(30px);
 }
 
+.navbar-close {
+  overflow: hidden;
+}
+
 @media (max-width: 985px) {
   .toggle {
     display: flex;
@@ -810,9 +813,6 @@ nav {
     opacity: 1;
     visibility: visible;
     top: -15px;
-  }
-  .navbar-close {
-    overflow: hidden;
   }
 }
 .main-component {

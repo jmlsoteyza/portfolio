@@ -41,7 +41,7 @@ const Home = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5, ease: "easeIn" }}
-      style={{ position: "absolute", width: "99.23%" }}
+      style={{ position: "absolute", width: "99.23%", height: "80vh" }}
     >
       <section className="home">
         <HomeSideLines currentColor={currentColor} />

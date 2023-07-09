@@ -133,7 +133,9 @@ nav {
 .toggle.active span:nth-child(3) {
   transform: translateX(30px);
 }
-
+.navbar-close {
+  overflow: hidden;
+}
 @media (max-width: 985px) {
   .toggle {
     display: flex;
@@ -199,7 +201,5 @@ nav {
     visibility: visible;
     top: -15px;
   }
-  .navbar-close {
-    overflow: hidden;
-  }
+
 }
