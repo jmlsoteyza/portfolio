@@ -5,7 +5,7 @@ const AboutSkills = () => {
   return (
     <div className="About-skills_container">
       <div className="About-skills_header">
-        <h1>Tech Stacks</h1>
+        <h1>Tech Stack</h1>
       </div>
       <div className="About-skills_logo">
         {skillsLogo.map((data) => (
