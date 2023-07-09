@@ -392,17 +392,17 @@
     padding-bottom: 5rem;
   }
 }
-@media (max-height: 750px) {
+@media (max-height: 750px) and (max-width: 480px) {
   .home {
     margin: 2.2rem auto;
   }
 }
-@media (max-height: 700px) {
+@media (max-height: 700px) and (max-width: 480px) {
   .home {
     height: 30rem;
   }
 }
-@media (max-height: 667px) {
+@media (max-height: 667px) and (max-width: 375px) {
   .home {
     height: 27.5rem;
   }
