@@ -1410,7 +1410,10 @@ nav {
 }
 @media screen and (max-width: 480px), screen and (max-height: 650px) {
   .Home-container {
-    height: 70vh;
+    height: 80vh;
+  }
+  .main-component {
+    height: 125vh;
   }
 }
 @font-face {
