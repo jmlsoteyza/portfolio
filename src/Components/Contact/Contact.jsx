@@ -21,8 +21,7 @@ const Contact = () => {
         initial={{ opacity: 0, y: 0 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: 0 }}
-        transition={{ duration: 0.4, y: 0 }}
-        style={{ width: "99.5%" }}
+        transition={{ duration: 0.4, y: 0, ease: "easeIn" }}
       >
         <div className="Contact-inner_container">
           <div className="Contact-header">

@@ -143,12 +143,11 @@ a {
   text-decoration: none;
 }
 .Home-container,
-.Projects-container,
 .Contact-container,
 .About-container {
   margin: 0;
-  height: 100%;
-  overflow-y: hidden;
+  position: absolute;
+  width: 100%;
 }
 .Projects-container {
   padding-bottom: 1rem;
@@ -159,6 +158,9 @@ a {
 .Home-container {
   padding-bottom: 1.85rem;
 }
-.About-container {
-  padding-bottom: 10.8rem;
+
+.main-component {
+  height: 100vh;
+  min-height: 935px;
+  // overflow-x: hidden;
 }

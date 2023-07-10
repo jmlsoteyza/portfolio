@@ -793,6 +793,7 @@ nav {
     transition: all 0.3s;
     gap: 3rem;
     visibility: hidden;
+    overflow: hidden;
   }
   .ul-container li {
     font-size: 1.406rem;
@@ -814,10 +815,6 @@ nav {
     top: -15px;
   }
 }
-.main-component {
-  height: 100%;
-}
-
 #dark {
   transition: all 0.5s ease;
 }
@@ -825,6 +822,7 @@ nav {
 #light {
   background-color: #e1e1e1;
   transition: all 0.5s ease;
+  overflow-x: hidden;
 }
 #light .Link-color,
 #light .inner-container-text {
@@ -1146,9 +1144,6 @@ nav {
   }
   .About-container {
     width: 100% !important;
-  }
-  .main-component {
-    overflow: hidden;
   }
 }
 @media (max-width: 900px) {
@@ -1561,12 +1556,11 @@ a {
 }
 
 .Home-container,
-.Projects-container,
 .Contact-container,
 .About-container {
   margin: 0;
-  height: 100%;
-  overflow-y: hidden;
+  position: absolute;
+  width: 100%;
 }
 
 .Projects-container {
@@ -1581,6 +1575,7 @@ a {
   padding-bottom: 1.85rem;
 }
 
-.About-container {
-  padding-bottom: 10.8rem;
+.main-component {
+  height: 100vh;
+  min-height: 935px;
 }
