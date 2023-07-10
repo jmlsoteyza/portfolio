@@ -822,7 +822,6 @@ nav {
 #light {
   background-color: #e1e1e1;
   transition: all 0.5s ease;
-  overflow-x: hidden;
 }
 #light .Link-color,
 #light .inner-container-text {
