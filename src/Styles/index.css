@@ -1381,43 +1381,15 @@ nav {
 }
 @media (max-width: 375px) {
   .svg_name {
-    margin-top: -6rem;
+    margin-top: -4.5rem;
   }
-  .inner-container-text {
-    margin-left: 2rem;
-    padding-right: 0;
-    margin-right: 0;
-  }
-  .inner-text {
-    padding-left: 0.8rem;
-    padding-right: 3rem;
-  }
-  .svg_name {
-    margin-left: 0.7rem;
-    width: 4rem;
+  .home {
+    height: 31rem;
   }
 }
 @media (max-height: 800px) {
-  .home {
-    height: 32rem;
-  }
   .About-container {
     padding-bottom: 5rem;
-  }
-}
-@media (max-height: 750px) and (max-width: 480px) {
-  .home {
-    margin: 2.2rem auto;
-  }
-}
-@media (max-height: 700px) and (max-width: 480px) {
-  .home {
-    height: 30rem;
-  }
-}
-@media (max-height: 667px) and (max-width: 375px) {
-  .home {
-    height: 27.5rem;
   }
 }
 @font-face {
@@ -1560,18 +1532,7 @@ a {
   margin: 0;
   position: absolute;
   width: 100%;
-}
-
-.Projects-container {
-  padding-bottom: 1rem;
-}
-
-.Contact-container {
-  padding-bottom: 6.36rem;
-}
-
-.Home-container {
-  padding-bottom: 1.85rem;
+  overflow: hidden;
 }
 
 .main-component {

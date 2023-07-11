@@ -148,17 +148,8 @@ a {
   margin: 0;
   position: absolute;
   width: 100%;
+  overflow: hidden;
 }
-.Projects-container {
-  padding-bottom: 1rem;
-}
-.Contact-container {
-  padding-bottom: 6.36rem;
-}
-.Home-container {
-  padding-bottom: 1.85rem;
-}
-
 .main-component {
   height: 100vh;
   min-height: 935px;
