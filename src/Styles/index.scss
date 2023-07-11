@@ -40,12 +40,7 @@ body {
   -moz-webkit-text-rendering: geometricprecision;
   overflow-x: hidden;
   color: #fff;
-  accent-color: #c6c6c6;
 }
-
-// body::-webkit-scrollbar {
-//   display: none;
-// }
 
 img,
 picture,
@@ -153,5 +148,4 @@ a {
 .main-component {
   height: 100vh;
   min-height: 935px;
-  // overflow-x: hidden;
 }
