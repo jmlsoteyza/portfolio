@@ -359,6 +359,15 @@
     }
   }
 }
+@media (max-width: 410px) {
+  .inner-container-text {
+    margin-right: 1.75rem;
+  }
+  .inner-text {
+    width: 105%;
+    margin-left: -1rem;
+  }
+}
 @media (max-width: 390px) {
   .projects_languages {
     gap: 1rem;
