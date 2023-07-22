@@ -151,6 +151,11 @@
     font-size: 2.8rem;
   }
 }
+@media (max-width: 760px) {
+  .inner-text {
+    padding-right: 1rem;
+  }
+}
 @media (max-width: 733px) {
   .inner-container-text {
     margin-left: 6rem;
@@ -344,6 +349,10 @@
   }
 }
 @media (max-width: 430px) {
+  .inner-text {
+    padding-right: 0;
+    width: 100%;
+  }
   .Contact-Icons {
     span {
       font-size: 13.5px !important;

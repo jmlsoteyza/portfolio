@@ -53,9 +53,9 @@ const Home = () => {
                 <HomeLinesGrad containerStyle={containerStyle} />
                 <div className="display-text">
                   <span className="inner-text text-width">
-                    An aspiring front-end developer who is passionate about
-                    creating beautiful web interfaces, web applications, and
-                    intuitively implemented UX.
+                    A front-end engineer who is enthusiastic about developing
+                    aesthetically pleasing web interfaces, web applications, and
+                    user experiences
                   </span>
                   <span className="inner-text-2 text-width">
                     You can also see my work on the following pages:

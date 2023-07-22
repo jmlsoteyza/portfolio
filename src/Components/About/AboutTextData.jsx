@@ -3,17 +3,17 @@ import Scss from "../../assets/images/scss.svg";
 import react from "../../assets/images/react.svg";
 import squareJS from "../../assets/images/js.svg";
 import css from "../../assets/images/css.svg";
-import git from "../../assets/images/git-alt.svg"
+import git from "../../assets/images/git-alt.svg";
 
 export const AboutTextData = [
   {
     id: "text1",
-    text: "As an aspiring front-end developer, I am committed to crafting websites that are not only visually stunning but also intuitive and user-friendly. I have a strong passion for web development and am always eager to learn new skills and techniques to further improve my craft.",
+    text: "As a front-end engineer, I have a solid understanding of front-end technologies, such as complex functionality, maintaining existing sites, debugging, and improving the user experience. I am also highly motivated and self-directed, with a strong work ethic and a constant desire to learn new skills to further improve my craft.",
   },
 
   {
     id: "text2",
-    text: " I am well-versed in HTML, CSS, JavaScript, and ReactJS, and I have a keen eye for design that helps me create websites that are both aesthetically pleasing and highly functional. While In my free time, I have worked on a variety of personal projects that have allowed me to refine my skills and showcase my creativity.",
+    text: " I am proficient in HTML, CSS, JavaScript, and ReactJS, and I have an eye for design that helps me create websites that are both aesthetically pleasing and highly functional. In my free time, I have worked on a variety of personal projects that have allowed me to refine my skills and showcase my creativity.",
   },
 ];
 
