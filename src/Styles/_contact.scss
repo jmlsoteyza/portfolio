@@ -71,7 +71,7 @@
   .Contact-header {
     margin-top: 3.65rem;
     display: flex;
-    align-items: center;
+    align-items: center !important;
     gap: 2.5rem;
     font-family: Arimo;
 
@@ -80,6 +80,9 @@
       font-weight: 600;
       color: #e1e1e1;
       font-family: "Gotham-Book";
+    }
+    span {
+      align-self: center !important;
     }
   }
 
