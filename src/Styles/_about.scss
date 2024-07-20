@@ -4,9 +4,9 @@
   margin: 0 auto;
 
   .aboutme-header {
-    margin-top: 3.65rem;
+    margin-top: 3.65rem !important;
     display: flex;
-    align-items: center !important;
+    align-items: center;
     gap: 2.5rem;
 
     h1 {
@@ -14,9 +14,6 @@
       font-family: "Gotham-Book";
       font-weight: 600;
       color: #e1e1e1;
-    }
-    span {
-      align-self: center !important;
     }
   }
 }

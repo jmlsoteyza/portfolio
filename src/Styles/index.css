@@ -8,9 +8,9 @@
   margin: 0 auto;
 }
 .about-inner_container .aboutme-header {
-  margin-top: 3.65rem;
+  margin-top: 3.65rem !important;
   display: flex;
-  align-items: center !important;
+  align-items: center;
   gap: 2.5rem;
 }
 .about-inner_container .aboutme-header h1 {
@@ -18,9 +18,6 @@
   font-family: "Gotham-Book";
   font-weight: 600;
   color: #e1e1e1;
-}
-.about-inner_container .aboutme-header span {
-  align-self: center !important;
 }
 
 .about-flex_container {
