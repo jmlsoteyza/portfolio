@@ -1,12 +1,12 @@
-import React from "react";
-import { TabsData2 } from "./ProjectsData";
-import "../../Styles/gradient.css";
+import React from 'react';
+import { TabsData2 } from './ProjectsData';
+import '../../Styles/gradient.css';
 
 const ProjectsTab2 = ({ tabsValue, lineStyle }) => {
   return (
-    <div className={`tabs-transition ${tabsValue === 1 ? "tab active" : ""}`}>
+    <div className={`tabs-transition ${tabsValue === 1 ? 'tab active' : ''}`}>
       {tabsValue === 1 && (
-        <div>
+        <div className="projects-container-tab">
           {TabsData2.map((tabs, key) => (
             <div className={tabs.class} key={key}>
               <div className="project-info_img">
@@ -15,10 +15,7 @@ const ProjectsTab2 = ({ tabsValue, lineStyle }) => {
               <div className="projects-info_container">
                 <div className="projects-title_header">
                   <h1>{tabs.title}</h1>
-                  <span
-                    className="projects-title_lineHeader"
-                    style={lineStyle}
-                  ></span>
+                  <span className="projects-title_lineHeader" style={lineStyle}></span>
                 </div>
                 <div className="projects_desc">
                   <p>{tabs.desc}</p>
