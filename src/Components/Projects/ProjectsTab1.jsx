@@ -6,7 +6,7 @@ const ProjectsTab1 = ({ tabsValue, lineStyle }) => {
   return (
     <div className={`tabs-transition ${tabsValue === 0 ? "tab active" : ""}`}>
       {tabsValue === 0 && (
-        <div>
+        <div className="projects-container-tab">
           {TabsData1.map((tabs, key) => (
             <div className={tabs.class} key={key}>
               <div className="project-info_img">
